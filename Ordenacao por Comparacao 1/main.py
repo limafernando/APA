@@ -7,7 +7,13 @@ def main():
 
 	print(inputList)
 
-	outputList = IS.InsertionSort(inputList)
+	outputList = IS.InsertionSort(inputList.copy())
+
+	print(outputList)
+
+	print(inputList)
+
+	outputList = SS.SelectionSort(inputList.copy())
 
 	print(outputList)
 
