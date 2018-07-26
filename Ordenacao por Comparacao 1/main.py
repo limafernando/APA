@@ -3,13 +3,8 @@ import SelectionSort as SS
 
 def main():	
 	
+	inputList = [5, 7, 10, 4, 1, 3, 8, 6]
 	outputList = []
-
-	inputList = input('Digite a lista a ser ordenada: ')
-	inputList = inputList.split(' ')
-	
-	for i in range(0, len(inputList)):
- 		inputList[i] = int(inputList[i])
 
 	print('\nA entrada é: ', inputList)
 
