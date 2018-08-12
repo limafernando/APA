@@ -18,6 +18,7 @@ def SelectionSort(inputList):
 				i_min = j
 
 		if inputList[i] != inputList[i_min]:
+			#encontrei um menor
 			#troca de posição
 			aux = inputList[i]
 			inputList[i] = inputList[i_min]
