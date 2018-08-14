@@ -10,25 +10,29 @@ import math as math
 
 def MergeSort(inputList, ini, fim):
 	if ini < fim:
+		print('Chamada do MergeSort com a lista', inputList[ini : fim+1])
 		q = math.floor((ini + fim)/2)
+		print('q =', inputList[q])
 		MergeSort(inputList, ini, q)
 		MergeSort(inputList, q+1, fim)
 		Merge(inputList, ini, q, fim)
-		#print(inputList)
 
 def Merge(inputList, ini, q, fim):
+	print('Chamada do Merge com a lista', inputList[ini : fim+1])
 	esq = inputList[ini : q+1]
 	dire = inputList[q+1 : fim+1]
 	esq.append(math.inf)
 	dire.append(math.inf)
+	print('esq:', esq)
+	#print(inputList[q])
+	print('dire:', dire)
 	i, j = 0, 0
+	print('Entrando no for para ordenação...')
 	for k in range(ini, fim+1):
-		#print(esq)
-		#print(dire)
 		if esq[i] < dire[j]:
 			inputList[k] = esq[i]
 			i += 1
-		else:
+		else: #esq[i] >= dire[j]
 			inputList[k] = dire[j]
 			j += 1
 
