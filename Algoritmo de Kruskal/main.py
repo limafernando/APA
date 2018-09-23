@@ -52,11 +52,13 @@ def main():
 				indice = vetorDeArvores.index(valorAMudar)
 				vetorDeArvores[indice] = vetorDeArvores[indiceArvoreNo1]
 
+		'''
 		else:
 			#done/finish it
 			print('Árvore Geradora Mínima:', solucao)
 			print('valor Da Solução:', valorDaSolucao)
 			break
+		'''
 
 if __name__ == '__main__':
 	main()
