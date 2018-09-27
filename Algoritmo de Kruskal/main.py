@@ -94,7 +94,7 @@ def main():
 			solucao.append(aresta)
 			valorDaSolucao += matrizAdj[aresta]
 
-			#Atualiza as árvores
+			#<Atualiza as árvores
 			arvoreAMudar = vetorDeArvores[indiceArvoreNo2] #qual árvore que vou atualizar
 
 			ocorrencias = vetorDeArvores.count(arvoreAMudar) #quantos nós tem naquela árvore
@@ -102,6 +102,7 @@ def main():
 			for i in range(0, ocorrencias):
 				indice = vetorDeArvores.index(arvoreAMudar)
 				vetorDeArvores[indice] = vetorDeArvores[indiceArvoreNo1]
+			#Atualiza as árvores>
 
 		else:
 			print('Não É Aresta Segura')
